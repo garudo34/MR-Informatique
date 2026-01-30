@@ -1,9 +1,5 @@
-@import 'tailwindcss';
-@import 'tw-animate-css';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -126,18 +122,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
-
-.container {
-  @apply max-w-6xl mx-auto px-6;
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--font-heading);
-}
-
-body {
-  background-color: #fafafa;
 }
