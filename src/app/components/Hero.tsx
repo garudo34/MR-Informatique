@@ -4,7 +4,47 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { motion, useMotionValue, useTransform } from 'framer-motion'
 import { Cpu, Clock, User } from 'lucide-react'
+import ImageSlider from './ImageSlider'
 import Container from './Container'
+
+const heroImages = [
+  {
+    src: '/img1.jpg',
+    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
+  },
+  {
+    src: '/img2.jpg',
+    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
+  },
+  {
+    src: '/img3.jpg',
+    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
+  },
+  {
+    src: '/img4.jpg',
+    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
+  },
+  {
+    src: '/img5.jpg',
+    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
+  },
+  {
+    src: '/img6.jpg',
+    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
+  },
+  {
+    src: '/img7.jpg',
+    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
+  },
+  {
+    src: '/img8.jpg',
+    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
+  },
+  {
+    src: '/img9.jpg',
+    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
+  },
+]
 
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0)
@@ -29,7 +69,7 @@ export default function Hero() {
 
   return (
     <section className="bg-white py-20 md:py-32 overflow-hidden">
-      <Container className="flex flex-col-reverse md:flex-row items-center gap-12">
+      <Container className="flex flex-col md:flex-row items-center gap-12">
         {/* Texte */}
         <div className="flex-1 text-center md:text-left space-y-6">
           <motion.h1
@@ -101,13 +141,12 @@ export default function Hero() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="flex-1 flex justify-center md:justify-end"
+          className="w-full md:flex-1 flex justify-center md:justify-end"
         >
-          <img
-            src="/hero-technicien.jpg"
-            alt="Technicien informatique à domicile"
-            className="w-full max-w-md rounded-lg shadow-lg"
-          />
+          {/* Wrapper mobile */}
+          <div className="relative w-[90%] sm:w-full max-w-md h-[300px] sm:h-[380px] rounded-xl shadow-xl overflow-hidden">
+            <ImageSlider images={heroImages} />
+          </div>
         </motion.div>
       </Container>
     </section>

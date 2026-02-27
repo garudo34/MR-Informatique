@@ -45,7 +45,7 @@ export default function Header() {
             href="/"
             className="text-xl font-bold text-primary tracking-tight"
           >
-            MR Informatique
+            MR <span className="text-secondary">INFORMATIQUE</span>
           </Link>
 
           {/* Desktop nav */}
