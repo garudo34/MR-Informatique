@@ -5,10 +5,10 @@ import Container from './Container'
 
 export default function CTA() {
   return (
-    <section className="py-20 bg-accent text-white text-center">
+    <section id="cta" className="py-20 bg-accent text-white text-center">
       <Container className="space-y-6">
         <h2 className="text-3xl md:text-4xl font-bold">
-          Un problème informatique ? Parlons-en.
+          Un problème informatique ? Contactez-moi.
         </h2>
         <Link
           href="#contact"

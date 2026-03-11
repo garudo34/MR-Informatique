@@ -12,7 +12,7 @@ const advantages = [
 
 export default function Advantages() {
   return (
-    <section className="py-20">
+    <section id="advantages" className="py-20 bg-light">
       <Container className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-primary">
           Pourquoi nous choisir ?

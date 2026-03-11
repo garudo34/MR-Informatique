@@ -2,14 +2,19 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import Container from './Container'
 
 export default function HeroBackground() {
+  const { scrollY } = useScroll()
+
+  // déplacement vertical de l'image
+  const y = useTransform(scrollY, [0, 700], [0, 350])
+
   return (
     <section className="relative h-[85vh] min-h-[600px] w-full flex items-center justify-center overflow-hidden">
-      {/* Image de fond */}
-      <div className="absolute inset-0 -z-20">
+      {/* Image de fond avec parallax */}
+      <motion.div style={{ y }} className="absolute inset-0 -z-20">
         <Image
           src="/background_dark_hero.png"
           alt="Technicien informatique à domicile"
@@ -18,7 +23,7 @@ export default function HeroBackground() {
           className="object-cover"
           sizes="100vw"
         />
-      </div>
+      </motion.div>
 
       {/* Overlay sombre */}
       <div className="absolute inset-0 bg-black/60 -z-10" />

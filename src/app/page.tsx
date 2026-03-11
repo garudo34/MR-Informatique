@@ -2,8 +2,10 @@ import Hero from './components/Hero'
 import Services from './components/Services'
 import Advantages from './components/Advantages'
 import Reviews from './components/Reviews'
-import CTA from './components/CTA'
 import Coverage from './components/Coverage'
+import Pricing from './components/Pricing'
+import Contact from './components/Contact'
+import SocialNetworks from './components/SocialNetworks'
 
 export default function Home() {
   return (
@@ -11,9 +13,11 @@ export default function Home() {
       <Hero />
       <Services />
       <Advantages />
-      <Reviews />
       <Coverage />
-      <CTA />
+      <Reviews />
+      <Pricing />
+      <Contact />
+      <SocialNetworks />
     </>
   )
 }
