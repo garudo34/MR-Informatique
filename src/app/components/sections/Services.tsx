@@ -1,7 +1,7 @@
 'use client'
 
 import { FaTools, FaCogs, FaDesktop, FaGraduationCap } from 'react-icons/fa'
-import Container from './Container'
+import Container from '../ui/Container'
 
 const services = [
   {

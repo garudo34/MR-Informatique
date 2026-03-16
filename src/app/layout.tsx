@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './components/layout/Header'
+import Footer from './components/layout/Footer'
 
 import { Inter, Poppins } from 'next/font/google'
 
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    'Mr informatique, votre spécialiste de la maintenance, formation et montage de pc sur mesure aux alentours de Bruay la buissière!',
+    'Mr informatique, votre spécialiste de la maintenance, formation et montage de pc sur mesure aux alentours de Bruay-la-Buissière!',
 
   keywords: [
     'dépannage informatique',

@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import Container from './Container'
+import Container from './ui/Container'
 
 export default function CTA() {
   return (

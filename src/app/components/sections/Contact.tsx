@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import Container from './Container'
+import Container from '../ui/Container'
 import { Phone, Mail, Clock } from 'lucide-react'
 
 export default function Contact() {

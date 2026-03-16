@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import Container from './Container'
+import Container from '../ui/Container'
 
 export default function HeroBackground() {
   const { scrollY } = useScroll()
@@ -64,7 +64,7 @@ export default function HeroBackground() {
             </Link>
 
             <Link
-              href="tel:0600000000"
+              href="tel:0626148111"
               className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold text-lg hover:bg-white hover:text-black transition"
             >
               Appeler maintenant

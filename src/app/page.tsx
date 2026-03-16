@@ -1,11 +1,11 @@
-import Hero from './components/Hero'
-import Services from './components/Services'
-import Advantages from './components/Advantages'
-import Reviews from './components/Reviews'
-import Coverage from './components/Coverage'
-import Pricing from './components/Pricing'
-import Contact from './components/Contact'
-import SocialNetworks from './components/SocialNetworks'
+import Hero from './components/sections/Hero'
+import Services from './components/sections/Services'
+import Advantages from './components/sections/Advantages'
+import Reviews from './components/sections/Reviews'
+import Coverage from './components/sections/Coverage'
+import Pricing from './components/sections/Pricing'
+import Contact from './components/sections/Contact'
+import SocialNetworks from './components/sections/SocialNetworks'
 
 export default function Home() {
   return (

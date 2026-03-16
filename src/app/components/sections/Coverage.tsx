@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import Container from './Container'
+import Container from '../ui/Container'
 
 const cities = ['Bruay-la-Buissière', 'Béthune', 'Lens', 'Lillers', 'Auchel']
 
