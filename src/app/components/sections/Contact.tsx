@@ -19,7 +19,7 @@ export default function Contact() {
             className="relative w-full max-w-sm mx-auto md:mx-0 aspect-[3/4] rounded-2xl overflow-hidden shadow-lg p-4"
           >
             <Image
-              src="/IMG_3874.jfif"
+              src="/IMG_3874.webp"
               alt="Technicien MR Informatique"
               fill
               className="object-cover"
