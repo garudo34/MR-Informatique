@@ -13,8 +13,9 @@ module.exports = {
         light: '#F5F7FA', // Background léger
       },
       fontFamily: {
-        sans: ['var(--font-inter)'],
-        display: ['var(--font-poppins)'],
+        // sans: ['var(--font-inter)'],
+        // display: ['var(--font-poppins)'],
+        walkway: ['Walkway Black'],
       },
       boxShadow: {
         soft: '0 8px 24px rgba(0,0,0,0.08)',

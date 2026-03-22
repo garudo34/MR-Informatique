@@ -18,7 +18,7 @@ type ImageSliderProps = {
 
 export default function ImageSlider({ images, className }: ImageSliderProps) {
   return (
-    <div className="relative w-full max-w-md mx-auto h-[300px] sm:h-[380px] rounded-xl shadow-xl overflow-hidden">
+    <div className="relative mx-auto h-75 w-full max-w-md overflow-hidden rounded-xl shadow-xl sm:h-95">
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"
@@ -31,7 +31,7 @@ export default function ImageSlider({ images, className }: ImageSliderProps) {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <div className="relative w-full h-full">
+            <div className="relative h-full w-full">
               <Image
                 src={image.src}
                 alt={image.alt}

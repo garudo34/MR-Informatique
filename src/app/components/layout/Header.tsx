@@ -22,12 +22,12 @@ export default function Header() {
   return (
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-md' : 'bg-white'
+        isScrolled ? 'bg-white/95 shadow-md backdrop-blur-md' : 'bg-white'
       }`}
     >
       {/* Bandeau contact */}
-      <div className="bg-secondary text-white text-sm">
-        <Container className="flex items-center justify-between h-10">
+      <div className="bg-secondary text-sm text-white">
+        <Container className="flex h-10 items-center justify-between">
           <span>Intervention rapide à domicile</span>
           <a
             href="tel:0626148111"
@@ -40,26 +40,27 @@ export default function Header() {
 
       {/* Barre principale */}
       <div className="border-b border-gray-200">
-        <Container className="flex items-center justify-between h-16">
-          {/* Logo */}
-
-          <Link href="/" className="flex items-center gap-3">
-            {/* <Image
-              src="/logo.jfif"
+        <Container className="flex h-16 items-center justify-between">
+          <Link
+            href="/"
+            className="group flex items-center gap-2 drop-shadow-sm"
+          >
+            <Image
+              src="/logo.png"
               alt="MR Informatique"
-              width={160}
-              height={64}
+              width={140}
+              height={100}
               priority
-              className="w-[140px] md:w-[160px] h-auto"
-            /> */}
+              className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            />
 
-            <span className="font-bold text-lg text-primary hidden sm:block">
-              MR Informatique
+            {/* Optionnel : texte discret */}
+            <span className="text-primary text-lg">
+              MR <span className="text-secondary">INFORMATIQUE</span>
             </span>
           </Link>
-
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+          <nav className="hidden items-center gap-8 text-sm font-medium text-gray-700 md:flex">
             <Link href="#services" className="hover:text-primary transition">
               Services
             </Link>
@@ -74,14 +75,6 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Desktop CTA */}
-          {/* <Link
-            href="#contact"
-            className="hidden md:inline-flex items-center gap-2 bg-accent text-white px-4 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition"
-          >
-            <Phone size={16} /> Intervention
-          </Link> */}
-
           {/* Burger */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -95,9 +88,9 @@ export default function Header() {
 
       {/* Mobile menu */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} bg-white border-b border-gray-200`}
+        className={`overflow-hidden transition-all duration-300 md:hidden ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} border-b border-gray-200 bg-white`}
       >
-        <Container className="flex flex-col py-6 gap-5 text-gray-700 font-medium">
+        <Container className="flex flex-col gap-5 py-6 font-medium text-gray-700">
           <Link href="#services" onClick={() => setIsOpen(false)}>
             Services
           </Link>
@@ -110,12 +103,6 @@ export default function Header() {
           <Link href="#contact" onClick={() => setIsOpen(false)}>
             Contact
           </Link>
-          {/* <a
-            href="tel:0626148111"
-            className="mt-4 flex items-center justify-center gap-2 bg-accent text-white py-3 rounded-lg font-semibold"
-          >
-            <Phone size={18} /> Appeler maintenant
-          </a> */}
         </Container>
       </div>
     </header>

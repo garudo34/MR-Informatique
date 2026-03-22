@@ -3,18 +3,11 @@ import type { Metadata } from 'next'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 
-import { Inter, Poppins } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
-  display: 'swap',
-})
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['600', '700'],
-  variable: '--font-poppins',
   display: 'swap',
 })
 
@@ -62,9 +55,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" className={`${inter.variable} ${poppins.variable}`}>
+    <html lang="fr" className={`${inter.variable} `}>
       <body className="bg-gray-50 text-gray-800 antialiased">
-        <div className="min-h-screen flex flex-col">
+        <div className="flex min-h-screen flex-col">
           <Header />
           <main className="flex-1">
             <script
