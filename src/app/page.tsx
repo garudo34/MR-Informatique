@@ -1,4 +1,5 @@
 import Hero from './components/sections/Hero'
+import HeroCarousel from './components/sections/HeroCarousel'
 import Services from './components/sections/Services'
 import Advantages from './components/sections/Advantages'
 import Reviews from './components/sections/Reviews'
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <HeroCarousel />
       <Services />
       <Advantages />
       <Coverage />

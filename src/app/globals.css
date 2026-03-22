@@ -2,18 +2,43 @@
 @import 'tw-animate-css';
 
 /* Si Tailwind v4 ne détecte pas automatiquement le config */
-@config "../../tailwind.config.cjs";
+@config '../../tailwind.config.cjs';
+
+@font-face {
+  font-family: 'Walkway';
+  src: url('/fonts/WalkwayBlack.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-title: 'Walkway', sans-serif;
+  --font-body: var(--font-body);
+}
+
+.font-title {
+  font-family: var(--font-title);
+  /* letter-spacing: 4px; */
+}
 
 html {
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: var(--font-body);
+}
+
 h1,
-h2,
+h2 {
+  font-family: var(--font-title);
+  letter-spacing: 0.25rem;
+}
+
 h3,
-h4,
-h5,
-h6 {
-  font-family: 'Poppins', sans-serif;
+h4 {
+  font-family: var(--font-title);
+  letter-spacing: 0.05rem;
 }
