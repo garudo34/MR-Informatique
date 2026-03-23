@@ -7,16 +7,16 @@ import { Phone, Mail, Clock } from 'lucide-react'
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-28 bg-light">
+    <section id="contact" className="bg-light py-20">
       <Container>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid items-center gap-12 md:grid-cols-2">
           {/* Photo */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative w-full max-w-sm mx-auto md:mx-0 aspect-[3/4] rounded-2xl overflow-hidden shadow-lg p-4"
+            className="relative mx-auto aspect-3/4 w-full max-w-sm overflow-hidden rounded-2xl p-4 shadow-lg md:mx-0"
           >
             <Image
               src="/IMG_3874.webp"
@@ -34,11 +34,11 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="space-y-8"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-primary">
+            <h2 className="text-primary text-3xl font-bold md:text-4xl">
               Nous contacter
             </h2>
 
-            <p className="text-gray-700 text-lg">
+            <p className="text-lg text-gray-700">
               Besoin d’un dépannage informatique ou d’un conseil ? A votre
               service y compris le soir et le week-end
             </p>
@@ -68,7 +68,7 @@ export default function Contact() {
 
             {/* Horaires */}
             <div className="pt-4">
-              <div className="flex items-center gap-3 mb-3">
+              <div className="mb-3 flex items-center gap-3">
                 <Clock className="text-primary" size={20} />
                 <span className="font-semibold text-gray-800">
                   Horaires d&apos;ouverture
@@ -84,7 +84,7 @@ export default function Contact() {
                 <li>Samedi : 8h00 – 23h00</li>
                 <li>Dimanche : 8h00 – 23h00</li>
               </ul>
-              <p className="mt-3 text-gray-700 text-sm">
+              <p className="mt-3 text-sm text-gray-700">
                 (majoration de 30% le dimanche, jours fériés, et de 20h à 23h)
               </p>
             </div>

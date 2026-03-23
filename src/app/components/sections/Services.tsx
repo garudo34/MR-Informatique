@@ -28,27 +28,27 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-blue-50">
-      <Container className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary">
+    <section id="services" className="bg-blue-50 py-20">
+      <Container className="mb-12 text-center">
+        <h2 className="text-primary text-3xl font-bold md:text-4xl">
           Nos services
         </h2>
-        <p className="text-gray-700 mt-2">
+        <p className="mt-2 text-gray-700">
           Tout ce qu’il vous faut pour votre PC, à domicile
         </p>
       </Container>
 
-      <Container className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <Container className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {services.map((service, i) => {
           const Icon = service.icon
           return (
             <div
               key={i}
-              className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform"
+              className="flex flex-col items-center rounded-xl bg-white p-6 text-center shadow-lg transition-transform hover:scale-105"
             >
               <Icon size={40} className="text-primary mb-4" />
-              <h3 className="font-semibold text-lg mb-2">{service.title}</h3>
-              <p className="text-gray-600 text-sm">{service.desc}</p>
+              <h3 className="mb-2 text-lg font-semibold">{service.title}</h3>
+              <p className="text-sm text-gray-600">{service.desc}</p>
             </div>
           )
         })}

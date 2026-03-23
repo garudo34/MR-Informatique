@@ -144,7 +144,7 @@ export default function HeroCarousel() {
           className="flex w-full justify-center md:flex-1 md:justify-end"
         >
           {/* Wrapper mobile */}
-          <div className="relative h-[300px] w-[90%] max-w-md overflow-hidden rounded-xl shadow-xl sm:h-[380px] sm:w-full">
+          <div className="relative h-75 w-[90%] max-w-md overflow-hidden rounded-xl shadow-xl sm:h-95 sm:w-full">
             <ImageSlider images={heroImages} />
           </div>
         </motion.div>

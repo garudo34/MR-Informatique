@@ -7,15 +7,15 @@ import { Banknote } from 'lucide-react'
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-28 bg-blue-50">
-      <Container className="text-center max-w-4xl">
+    <section id="pricing" className="bg-blue-50 py-20">
+      <Container className="max-w-4xl text-center">
         {/* Titre */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-primary"
+          className="text-primary text-3xl font-bold md:text-4xl"
         >
           Nos tarifs
         </motion.h2>
@@ -26,7 +26,7 @@ export default function Pricing() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="text-gray-700 mt-6 text-lg leading-relaxed"
+          className="mt-6 text-lg leading-relaxed text-gray-700"
         >
           Nous vous proposons une liste non exhaustive de services variés,
           n&apos;hésitez pas à nous contacter pour obtenir un devis, notre
@@ -47,7 +47,7 @@ export default function Pricing() {
           <a
             href="/misc/tarifs-mr-informatique.pdf"
             download
-            className="inline-block bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition shadow-md"
+            className="bg-accent inline-block rounded-lg px-8 py-4 text-lg font-semibold text-white shadow-md transition hover:opacity-90"
           >
             Télécharger la grille tarifaire (PDF)
           </a>
@@ -61,9 +61,9 @@ export default function Pricing() {
           transition={{ delay: 0.6 }}
           className="mt-14"
         >
-          <p className="text-gray-600 mb-6">Moyens de paiement acceptés</p>
+          <p className="mb-6 text-gray-600">Moyens de paiement acceptés</p>
 
-          <div className="flex flex-wrap justify-center items-center gap-8 text-gray-700">
+          <div className="flex flex-wrap items-center justify-center gap-8 text-gray-700">
             <div className="flex items-center gap-2">
               <Banknote size={24} />
               <span>Espèces</span>

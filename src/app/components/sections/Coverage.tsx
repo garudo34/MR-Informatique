@@ -10,15 +10,15 @@ export default function Coverage() {
   return (
     <section
       id="coverage"
-      className="py-28 bg-blue-50 relative overflow-hidden"
+      className="relative overflow-hidden bg-blue-50 py-20"
     >
-      <Container className="text-center mb-16">
+      <Container className="mb-16 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold text-primary"
+          className="text-primary text-3xl font-bold md:text-4xl"
         >
           Zone d’intervention
         </motion.h2>
@@ -28,7 +28,7 @@ export default function Coverage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-gray-700 mt-4 max-w-2xl mx-auto"
+          className="mx-auto mt-4 max-w-2xl text-gray-700"
         >
           Intervention rapide à Bruay-la-Buissière (62700) et dans un rayon de
           30 km.
@@ -37,27 +37,27 @@ export default function Coverage() {
 
       <Container>
         {/* GRID carte + texte */}
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid items-center gap-12 md:grid-cols-2">
           {/* Carte glass */}
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative rounded-3xl backdrop-blur-sm bg-white/70 border border-white/40 shadow-soft p-4"
+            className="shadow-soft relative rounded-3xl border border-white/40 bg-white/70 p-4 backdrop-blur-sm"
           >
-            <div className="relative group rounded-2xl overflow-hidden">
+            <div className="group relative overflow-hidden rounded-2xl">
               <Image
                 src="/zone-intervention.jpg"
                 alt="Zone d’intervention de MR Informatique autour de Bruay-la-Buissière (rayon 30 km)"
                 width={700}
                 height={500}
                 quality={100}
-                className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                className="h-auto w-full object-contain transition-transform duration-500 group-hover:scale-105"
                 priority
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-70 pointer-events-none" />
+              <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-70" />
 
               <div className="absolute bottom-6 left-6 text-white">
                 <p className="text-lg font-semibold tracking-wide">
@@ -73,7 +73,7 @@ export default function Coverage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="space-y-6 text-gray-700 text-lg leading-relaxed"
+            className="space-y-6 text-lg leading-relaxed text-gray-700"
           >
             <p>
               D&apos;Hazebrouck à Arras, de Fruges à Carvin,{' '}
@@ -91,12 +91,12 @@ export default function Coverage() {
 
             <p>
               Votre ordinateur peut même être assemblé{' '}
-              <span className="inline-flex items-center gap-1 hover:text-purple-500 transition">
+              <span className="inline-flex items-center gap-1 transition hover:text-purple-500">
                 <a
                   href="https://www.twitch.tv/mr_informatique"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 hover:opacity-80 transition"
+                  className="flex items-center gap-2 transition hover:opacity-80"
                 >
                   en live sur Twitch{' '}
                   <Image
@@ -119,15 +119,15 @@ export default function Coverage() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="text-center mt-14"
+          className="mt-14 text-center"
         >
-          <p className="text-primary font-semibold text-lg">
+          <p className="text-primary text-lg font-semibold">
             +200 interventions locales réalisées
           </p>
         </motion.div>
 
         {/* Badges villes animés */}
-        <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto mt-8">
+        <div className="mx-auto mt-8 flex max-w-3xl flex-wrap justify-center gap-3">
           {cities.map((city, index) => (
             <motion.span
               key={index}
@@ -135,7 +135,7 @@ export default function Coverage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white border border-gray-200 px-4 py-2 rounded-full text-sm font-medium text-gray-700 shadow-sm hover:bg-primary hover:text-white transition"
+              className="hover:bg-primary rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition hover:text-white"
             >
               {city}
             </motion.span>

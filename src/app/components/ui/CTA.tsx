@@ -5,14 +5,14 @@ import Container from './Container'
 
 export default function CTA() {
   return (
-    <section id="cta" className="py-20 bg-accent text-white text-center">
+    <section id="cta" className="bg-accent py-20 text-center text-white">
       <Container className="space-y-6">
-        <h2 className="text-3xl md:text-4xl font-bold">
+        <h2 className="text-3xl font-bold md:text-4xl">
           Un problème informatique ? Contactez-moi.
         </h2>
         <Link
           href="#contact"
-          className="bg-white text-accent px-8 py-4 rounded-lg font-semibold text-lg hover:opacity-90 transition"
+          className="text-accent rounded-lg bg-white px-8 py-4 text-lg font-semibold transition hover:opacity-90"
         >
           Contact rapide
         </Link>

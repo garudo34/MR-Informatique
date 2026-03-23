@@ -55,7 +55,7 @@ export default function Header() {
             />
 
             {/* Optionnel : texte discret */}
-            <span className="text-primary text-lg">
+            <span className="text-primary font-title text-lg">
               MR <span className="text-secondary">INFORMATIQUE</span>
             </span>
           </Link>

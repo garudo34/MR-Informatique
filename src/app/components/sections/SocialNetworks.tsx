@@ -6,9 +6,9 @@ import Container from '../ui/Container'
 
 export default function SocialNetworks() {
   return (
-    <section id="socialnetworks" className="py-20 bg-blue-50">
+    <section id="socialnetworks" className="bg-blue-50 py-20">
       <Container>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid items-center gap-12 md:grid-cols-2">
           {/* Réseaux sociaux */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -17,10 +17,10 @@ export default function SocialNetworks() {
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <h3 className="text-3xl md:text-4xl font-bold text-primary">
+            <h3 className="text-primary text-3xl font-bold md:text-4xl">
               Suivez-nous sur les réseaux
             </h3>
-            <p className="text-gray-700 text-lg">
+            <p className="text-lg text-gray-700">
               Likez, partagez, donnez votre avis
             </p>
 
@@ -30,7 +30,7 @@ export default function SocialNetworks() {
                   href="https://www.facebook.com/mr.informatique.entreprise/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 hover:text-accent transition"
+                  className="hover:text-accent flex items-center gap-3 transition"
                 >
                   <Image
                     src="/icons/fb_mini.png"
@@ -47,7 +47,7 @@ export default function SocialNetworks() {
                   href="https://www.instagram.com/mr.informatique?igshid=vrzyxgjb5ku2"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 hover:text-accent transition"
+                  className="hover:text-accent flex items-center gap-3 transition"
                 >
                   <Image
                     src="/icons/insta_mini.png"
@@ -64,7 +64,7 @@ export default function SocialNetworks() {
                   href="https://www.twitch.tv/mr_informatique"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 hover:text-accent transition"
+                  className="hover:text-accent flex items-center gap-3 transition"
                 >
                   <Image
                     src="/icons/twitch_mini.png"
@@ -81,7 +81,7 @@ export default function SocialNetworks() {
                   href="https://www.pagesjaunes.fr/pros/60729491"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 hover:text-accent transition"
+                  className="hover:text-accent flex items-center gap-3 transition"
                 >
                   <Image
                     src="/icons/pj_mini.png"
@@ -98,7 +98,7 @@ export default function SocialNetworks() {
                   href="https://g.page/r/CXi5ulO2zwTJEAI/review"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 hover:text-accent transition"
+                  className="hover:text-accent flex items-center gap-3 transition"
                 >
                   <Image
                     src="/icons/gmb_mini.png"
@@ -115,7 +115,7 @@ export default function SocialNetworks() {
                   href="https://www.linkedin.com/company/mr-informatique/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 hover:text-accent transition"
+                  className="hover:text-accent flex items-center gap-3 transition"
                 >
                   <Image
                     src="/icons/li_mini.png"
@@ -135,7 +135,7 @@ export default function SocialNetworks() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative w-full max-w-md mx-auto aspect-[4/3] rounded-2xl overflow-hidden shadow-xl"
+            className="relative mx-auto aspect-4/3 w-full max-w-md overflow-hidden rounded-2xl shadow-xl"
           >
             <Image
               src="/reseaux.jpg"

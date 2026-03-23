@@ -12,21 +12,24 @@ const advantages = [
 
 export default function Advantages() {
   return (
-    <section id="advantages" className="py-20 bg-light">
-      <Container className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary">
+    <section
+      id="advantages"
+      className="bg-light scroll-mt-24 py-20 md:scroll-mt-28"
+    >
+      <Container className="mb-12 text-center">
+        <h2 className="text-primary text-3xl font-bold md:text-4xl">
           Pourquoi nous choisir ?
         </h2>
       </Container>
 
-      <Container className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <Container className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {advantages.map((text, i) => (
           <div
             key={i}
-            className="flex flex-col items-center bg-white rounded-xl shadow-md p-6 hover:scale-105 transition-transform"
+            className="flex flex-col items-center rounded-xl bg-white p-6 shadow-md transition-transform hover:scale-105"
           >
             <CheckCircle size={36} className="text-primary mb-4" />
-            <p className="text-gray-700 font-medium text-center">{text}</p>
+            <p className="text-center font-medium text-gray-700">{text}</p>
           </div>
         ))}
       </Container>
