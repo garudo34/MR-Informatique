@@ -14,7 +14,7 @@ export default function Advantages() {
   return (
     <section
       id="advantages"
-      className="bg-light scroll-mt-24 py-20 md:scroll-mt-28"
+      className="bg-light scroll-mt-24 py-14 md:scroll-mt-28 md:py-20"
     >
       <Container className="mb-12 text-center">
         <h2 className="text-primary text-3xl font-bold md:text-4xl">
@@ -26,10 +26,10 @@ export default function Advantages() {
         {advantages.map((text, i) => (
           <div
             key={i}
-            className="flex flex-col items-center rounded-xl bg-white p-6 shadow-md transition-transform hover:scale-105"
+            className="flex flex-col items-center rounded-xl bg-white p-6 text-center shadow-lg transition-transform hover:scale-105"
           >
-            <CheckCircle size={36} className="text-primary mb-4" />
-            <p className="text-center font-medium text-gray-700">{text}</p>
+            <CheckCircle size={40} className="text-primary mb-4" />
+            <p className="font-medium text-gray-700">{text}</p>
           </div>
         ))}
       </Container>

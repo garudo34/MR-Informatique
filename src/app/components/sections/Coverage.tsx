@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Container from '../ui/Container'
+import ImageCard from '../ui/ImageCard'
 
 const cities = ['Bruay-la-Buissière', 'Béthune', 'Lens', 'Lillers', 'Auchel']
 
@@ -10,7 +11,7 @@ export default function Coverage() {
   return (
     <section
       id="coverage"
-      className="relative overflow-hidden bg-blue-50 py-20"
+      className="relative overflow-hidden bg-blue-50 py-14 md:py-20"
     >
       <Container className="mb-16 text-center">
         <motion.h2
@@ -39,33 +40,12 @@ export default function Coverage() {
         {/* GRID carte + texte */}
         <div className="grid items-center gap-12 md:grid-cols-2">
           {/* Carte glass */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="shadow-soft relative rounded-3xl border border-white/40 bg-white/70 p-4 backdrop-blur-sm"
-          >
-            <div className="group relative overflow-hidden rounded-2xl">
-              <Image
-                src="/zone-intervention.jpg"
-                alt="Zone d’intervention de MR Informatique autour de Bruay-la-Buissière (rayon 30 km)"
-                width={700}
-                height={500}
-                quality={100}
-                className="h-auto w-full object-contain transition-transform duration-500 group-hover:scale-105"
-                priority
-              />
-
-              <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/40 to-transparent opacity-70" />
-
-              <div className="absolute bottom-6 left-6 text-white">
-                <p className="text-lg font-semibold tracking-wide">
-                  Rayon d’intervention 30 km
-                </p>
-              </div>
-            </div>
-          </motion.div>
+          <ImageCard
+            src="/zone-intervention.jpg"
+            alt="Zone d’intervention MR Informatique"
+            overlayText="Rayon d’intervention 30 km"
+            variant="blue"
+          />
 
           {/* Texte */}
           <motion.div

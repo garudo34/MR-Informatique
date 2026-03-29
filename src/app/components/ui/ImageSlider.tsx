@@ -16,9 +16,9 @@ type ImageSliderProps = {
   className?: string
 }
 
-export default function ImageSlider({ images, className }: ImageSliderProps) {
+export default function ImageSlider({ images }: ImageSliderProps) {
   return (
-    <div className="relative mx-auto h-75 w-full max-w-md overflow-hidden rounded-xl shadow-xl sm:h-95">
+    <div className="relative mx-auto h-75 w-full max-w-md overflow-hidden rounded-xl shadow-xl sm:h-85">
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"

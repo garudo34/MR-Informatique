@@ -12,7 +12,10 @@ export default function HeroBackground() {
   const y = useTransform(scrollY, [0, 700], [0, 350])
 
   return (
-    <section className="relative flex h-[85vh] min-h-150 w-full items-center justify-center overflow-hidden">
+    <section
+      id="top"
+      className="relative flex h-[85vh] min-h-150 w-full items-center justify-center overflow-hidden"
+    >
       {/* Image de fond avec parallax */}
       <motion.div style={{ y }} className="absolute inset-0 -z-20">
         <Image

@@ -1,30 +1,22 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import Container from '../ui/Container'
 import { Phone, Mail, Clock } from 'lucide-react'
+import ImageCard from '../ui/ImageCard'
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-light py-20">
+    <section id="contact" className="bg-light py-14 md:py-20">
       <Container>
         <div className="grid items-center gap-12 md:grid-cols-2">
           {/* Photo */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative mx-auto aspect-3/4 w-full max-w-sm overflow-hidden rounded-2xl p-4 shadow-lg md:mx-0"
-          >
-            <Image
-              src="/IMG_3874.webp"
-              alt="Technicien MR Informatique"
-              fill
-              className="object-cover"
-            />
-          </motion.div>
+          <ImageCard
+            src="/IMG_3874.webp"
+            alt="Technicien MR Informatique"
+            className="mx-auto hidden w-full max-w-sm overflow-hidden rounded-3xl p-4 shadow-lg md:mx-0 md:block"
+            variant="light"
+          />
 
           {/* Contact + horaires */}
           <motion.div

@@ -6,6 +6,7 @@ import { motion, useMotionValue, useTransform } from 'framer-motion'
 import { Cpu, Clock, User } from 'lucide-react'
 import ImageSlider from '../ui/ImageSlider'
 import Container from '../ui/Container'
+import ImageCard from '../ui/ImageCard'
 
 const heroImages = [
   {
@@ -68,7 +69,7 @@ export default function HeroCarousel() {
   }
 
   return (
-    <section className="overflow-hidden bg-white py-20 md:py-32">
+    <section className="bg-light overflow-hidden py-14 md:py-20">
       <Container className="flex flex-col items-center gap-12 md:flex-row">
         {/* Texte */}
         <div className="flex-1 space-y-6 text-center md:text-left">
@@ -141,12 +142,14 @@ export default function HeroCarousel() {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="flex w-full justify-center md:flex-1 md:justify-end"
+          className="flex w-full justify-center md:flex-1"
         >
-          {/* Wrapper mobile */}
-          <div className="relative h-75 w-[90%] max-w-md overflow-hidden rounded-xl shadow-xl sm:h-95 sm:w-full">
+          <ImageCard
+            className="h-full w-[90%] max-w-md overflow-hidden sm:w-full"
+            variant="light"
+          >
             <ImageSlider images={heroImages} />
-          </div>
+          </ImageCard>
         </motion.div>
       </Container>
     </section>

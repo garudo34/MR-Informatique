@@ -11,7 +11,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="bg-light py-20">
+    <section id="reviews" className="bg-light py-14 md:py-20">
       <Container className="mb-12 text-center">
         <h2 className="text-primary text-3xl font-bold md:text-4xl">
           Avis clients

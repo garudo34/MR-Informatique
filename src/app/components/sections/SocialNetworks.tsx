@@ -3,10 +3,11 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Container from '../ui/Container'
+import ImageCard from '../ui/ImageCard'
 
 export default function SocialNetworks() {
   return (
-    <section id="socialnetworks" className="bg-blue-50 py-20">
+    <section id="socialnetworks" className="bg-blue-50 py-14 md:py-20">
       <Container>
         <div className="grid items-center gap-12 md:grid-cols-2">
           {/* Réseaux sociaux */}
@@ -130,20 +131,13 @@ export default function SocialNetworks() {
           </motion.div>
 
           {/* Photo */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative mx-auto aspect-4/3 w-full max-w-md overflow-hidden rounded-2xl shadow-xl"
-          >
-            <Image
-              src="/reseaux.jpg"
-              alt="Technicien MR Informatique"
-              fill
-              className="object-cover"
-            />
-          </motion.div>
+
+          <ImageCard
+            src="/reseaux.jpg"
+            alt="Technicien MR Informatique"
+            className="mx-auto w-full max-w-md overflow-hidden"
+            variant="blue"
+          />
         </div>
       </Container>
     </section>

@@ -42,7 +42,7 @@ export default function Header() {
       <div className="border-b border-gray-200">
         <Container className="flex h-16 items-center justify-between">
           <Link
-            href="/"
+            href="/#top"
             className="group flex items-center gap-2 drop-shadow-sm"
           >
             <Image

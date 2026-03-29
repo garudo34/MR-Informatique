@@ -7,7 +7,7 @@ import { Banknote } from 'lucide-react'
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="bg-blue-50 py-20">
+    <section id="pricing" className="bg-blue-50 py-14 md:py-20">
       <Container className="max-w-4xl text-center">
         {/* Titre */}
         <motion.h2
@@ -66,7 +66,7 @@ export default function Pricing() {
           <div className="flex flex-wrap items-center justify-center gap-8 text-gray-700">
             <div className="flex items-center gap-2">
               <Banknote size={24} />
-              <span>Espèces</span>
+              <span>Espèces, Chèques</span>
             </div>
 
             <Image
