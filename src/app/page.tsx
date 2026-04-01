@@ -7,6 +7,7 @@ import Coverage from './components/sections/Coverage'
 import Pricing from './components/sections/Pricing'
 import Contact from './components/sections/Contact'
 import SocialNetworks from './components/sections/SocialNetworks'
+import FAQ from './components/sections/FAQ'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Reviews />
       <Pricing />
       <Contact />
+      <FAQ />
       <SocialNetworks />
     </>
   )

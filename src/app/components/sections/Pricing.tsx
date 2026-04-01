@@ -8,7 +8,7 @@ import { Banknote } from 'lucide-react'
 export default function Pricing() {
   return (
     <section id="pricing" className="bg-blue-50 py-14 md:py-20">
-      <Container className="max-w-4xl text-center">
+      <Container className="mb-12 max-w-4xl text-center">
         {/* Titre */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

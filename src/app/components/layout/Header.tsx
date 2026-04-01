@@ -61,17 +61,20 @@ export default function Header() {
           </Link>
           {/* Desktop nav */}
           <nav className="hidden items-center gap-8 text-sm font-medium text-gray-700 md:flex">
-            <Link href="#services" className="hover:text-primary transition">
+            <Link href="/#services" className="hover:text-primary transition">
               Services
             </Link>
-            <Link href="#coverage" className="hover:text-primary transition">
+            <Link href="/#coverage" className="hover:text-primary transition">
               Zone d&apos;Intervention
             </Link>
-            <Link href="#pricing" className="hover:text-primary transition">
+            <Link href="/#pricing" className="hover:text-primary transition">
               Tarifs
             </Link>
-            <Link href="#contact" className="hover:text-primary transition">
+            <Link href="/#contact" className="hover:text-primary transition">
               Contact
+            </Link>
+            <Link href="/faq" className="hover:text-primary transition">
+              FAQ
             </Link>
           </nav>
 
@@ -91,16 +94,16 @@ export default function Header() {
         className={`overflow-hidden transition-all duration-300 md:hidden ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} border-b border-gray-200 bg-white`}
       >
         <Container className="flex flex-col gap-5 py-6 font-medium text-gray-700">
-          <Link href="#services" onClick={() => setIsOpen(false)}>
+          <Link href="/#services" onClick={() => setIsOpen(false)}>
             Services
           </Link>
-          <Link href="#coverage" onClick={() => setIsOpen(false)}>
+          <Link href="/#coverage" onClick={() => setIsOpen(false)}>
             Zone d&apos;Intervention
           </Link>
-          <Link href="#pricing" onClick={() => setIsOpen(false)}>
+          <Link href="/#pricing" onClick={() => setIsOpen(false)}>
             Tarifs
           </Link>
-          <Link href="#contact" onClick={() => setIsOpen(false)}>
+          <Link href="/#contact" onClick={() => setIsOpen(false)}>
             Contact
           </Link>
         </Container>

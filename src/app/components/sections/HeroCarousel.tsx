@@ -76,7 +76,7 @@ export default function HeroCarousel() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
             className="text-primary text-4xl leading-tight font-bold md:text-5xl"
           >
             Dépannage et réparation informatique à domicile
@@ -85,7 +85,7 @@ export default function HeroCarousel() {
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
             className="text-lg text-gray-700"
           >
             Intervention rapide • PC & Mac • Particuliers et professionnels

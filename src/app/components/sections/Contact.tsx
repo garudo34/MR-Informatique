@@ -8,7 +8,7 @@ import ImageCard from '../ui/ImageCard'
 export default function Contact() {
   return (
     <section id="contact" className="bg-light py-14 md:py-20">
-      <Container>
+      <Container className="mb-12">
         <div className="grid items-center gap-12 md:grid-cols-2">
           {/* Photo */}
           <ImageCard
