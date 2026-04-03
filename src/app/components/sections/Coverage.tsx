@@ -44,6 +44,7 @@ export default function Coverage() {
             src="/zone-intervention.jpg"
             alt="Zone d’intervention MR Informatique"
             overlayText="Rayon d’intervention 30 km"
+            className="mx-auto w-full max-w-md overflow-hidden"
             variant="blue"
           />
 
