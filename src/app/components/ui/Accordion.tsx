@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
-import clsx from 'clsx'
+
 import type { FAQItem } from '@/lib/types'
 
 export default function Accordion({ items }: { items: FAQItem[] }) {

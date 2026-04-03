@@ -46,7 +46,8 @@ export default function Pricing() {
         >
           <a
             href="/misc/tarifs-mr-informatique.pdf"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-accent inline-block rounded-lg px-8 py-4 text-lg font-semibold text-white shadow-md transition hover:opacity-90"
           >
             Télécharger la grille tarifaire (PDF)
