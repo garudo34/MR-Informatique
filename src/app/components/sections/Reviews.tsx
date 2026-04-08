@@ -14,7 +14,12 @@ export default function Reviews() {
     fetch('api/reviews')
       .then((res) => res.json())
       .then((data) => {
-        setReviews(data.reviews || [])
+        setReviews(
+          data.reviews
+            .filter((r: GoogleReview) => r.rating >= 4)
+            .sort((a: GoogleReview, b: GoogleReview) => b.rating - a.rating) ||
+            []
+        )
         setRating(data.rating || null)
       })
   }, [])

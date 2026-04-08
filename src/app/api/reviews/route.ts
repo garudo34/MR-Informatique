@@ -11,7 +11,8 @@ export async function GET() {
       headers: {
         'Content-Type': 'application/json',
       },
-      cache: 'no-store', // ou 'force-cache' si tu veux optimiser
+      cache: 'force-cache',
+      next: { revalidate: 86400 }, // 1day
     })
 
     if (!res.ok) {
