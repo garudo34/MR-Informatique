@@ -8,44 +8,10 @@ import ImageSlider from '../ui/ImageSlider'
 import Container from '../ui/Container'
 import ImageCard from '../ui/ImageCard'
 
-const heroImages = [
-  {
-    src: '/img1.jpg',
-    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
-  },
-  {
-    src: '/img2.jpg',
-    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
-  },
-  {
-    src: '/img3.jpg',
-    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
-  },
-  {
-    src: '/img4.jpg',
-    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
-  },
-  {
-    src: '/img5.jpg',
-    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
-  },
-  {
-    src: '/img6.jpg',
-    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
-  },
-  {
-    src: '/img7.jpg',
-    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
-  },
-  {
-    src: '/img8.jpg',
-    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
-  },
-  {
-    src: '/img9.jpg',
-    alt: 'Technicien informatique à domicile à Bruay-la-Buissière',
-  },
-]
+type HeroImage = {
+  src: string
+  alt: string
+}
 
 export default function HeroCarousel() {
   const [scrollY, setScrollY] = useState(0)
@@ -67,6 +33,15 @@ export default function HeroCarousel() {
     }),
     hover: { scale: 1.05, textShadow: '0px 0px 4px rgba(0,0,0,0.3)' },
   }
+
+  const [heroImages, setHeroImages] = useState<HeroImage[]>([])
+  useEffect(() => {
+    fetch('/api/hero-images')
+      .then((res) => res.json())
+      .then((data) => setHeroImages(data))
+  }, [])
+
+  if (!heroImages.length) return null
 
   return (
     <section className="bg-light overflow-hidden py-14 md:py-20">
