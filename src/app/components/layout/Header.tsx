@@ -73,7 +73,7 @@ export default function Header() {
             <Link href="/#contact" className="hover:text-primary transition">
               Contact
             </Link>
-            <Link href="/faq" className="hover:text-primary transition">
+            <Link href="/#faq" className="hover:text-primary transition">
               FAQ
             </Link>
           </nav>
