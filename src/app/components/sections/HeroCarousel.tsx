@@ -103,7 +103,7 @@ export default function HeroCarousel() {
               Demander un devis gratuit
             </Link>
             <Link
-              href="tel:0600000000"
+              href="tel:0626148111"
               className="border-accent text-accent hover:bg-accent rounded-lg border-2 px-6 py-3 text-lg font-semibold transition hover:text-white"
             >
               Appeler maintenant

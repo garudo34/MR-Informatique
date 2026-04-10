@@ -43,7 +43,7 @@ export default function FAQClient({ faqs }: Props) {
       >
         <Link
           href="/faq"
-          className="bg-accent animate-pulse rounded-lg px-6 py-3 text-lg font-semibold text-white transition-all hover:opacity-90"
+          className="bg-accent rounded-lg px-6 py-3 text-lg font-semibold text-white transition-all hover:opacity-90"
         >
           Voir les autres questions
         </Link>

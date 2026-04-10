@@ -77,7 +77,7 @@ export default function Reviews() {
         <div className="mt-16 text-center">
           <Link
             href="https://www.google.com/search?sca_esv=15ff0100134ea361&rlz=1C1GCEA_enFR773FR773&sxsrf=ANbL-n463CX9m7tR6_bSpMKmVUELejHUdQ:1775685986871&q=mr+informatique+bruay&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qORleCh8U9vyHb_UJS070JIJkFuKG_gP7ozTg2XyecGp1IEeYb7KXYTvs9-iMeyF9mfKPy_0%3D&uds=ALYpb_lx5Hup9BUa31h6AkHudUb2IPhyqpefkitSJwRid_RYQ1pSqiaEa5uIVaCAatwRl2ADyyY9Vw7G29u8pMoWS_8zLkHpiYvewpDz-OVhByrfQsZndl1j9A0QQBE_haFk4v3vCshH&sa=X&ved=2ahUKEwiTruvjod-TAxWMRKQEHYuPMkMQ3PALegQIGRAE"
-            className="bg-accent animate-pulse rounded-lg px-6 py-3 text-lg font-semibold text-white transition-all hover:opacity-90"
+            className="bg-accent rounded-lg px-6 py-3 text-lg font-semibold text-white transition-all hover:opacity-90"
           >
             Voir tous les avis Google
           </Link>
