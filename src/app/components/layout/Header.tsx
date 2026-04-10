@@ -106,6 +106,9 @@ export default function Header() {
           <Link href="/#contact" onClick={() => setIsOpen(false)}>
             Contact
           </Link>
+          <Link href="/#faq" onClick={() => setIsOpen(false)}>
+            FAQ
+          </Link>
         </Container>
       </div>
     </header>

@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Container from '../ui/Container'
 import { GoogleReview } from '@/lib/types'
 import ReviewCard from '../ui/ReviewCard'
+import Link from 'next/link'
 
 export default function Reviews() {
   const [reviews, setReviews] = useState<GoogleReview[]>([])
@@ -25,7 +26,7 @@ export default function Reviews() {
   }, [])
 
   return (
-    <section id="reviews" className="scroll-mt-30 bg-blue-50 py-14 md:py-20">
+    <section id="reviews" className="bg-light py-14 md:py-20">
       <Container>
         {/* HEADER */}
         <div className="mb-16 text-center">
@@ -74,13 +75,12 @@ export default function Reviews() {
         </div>
         {/* CTA */}
         <div className="mt-16 text-center">
-          <a
+          <Link
             href="https://www.google.com/search?sca_esv=15ff0100134ea361&rlz=1C1GCEA_enFR773FR773&sxsrf=ANbL-n463CX9m7tR6_bSpMKmVUELejHUdQ:1775685986871&q=mr+informatique+bruay&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qORleCh8U9vyHb_UJS070JIJkFuKG_gP7ozTg2XyecGp1IEeYb7KXYTvs9-iMeyF9mfKPy_0%3D&uds=ALYpb_lx5Hup9BUa31h6AkHudUb2IPhyqpefkitSJwRid_RYQ1pSqiaEa5uIVaCAatwRl2ADyyY9Vw7G29u8pMoWS_8zLkHpiYvewpDz-OVhByrfQsZndl1j9A0QQBE_haFk4v3vCshH&sa=X&ved=2ahUKEwiTruvjod-TAxWMRKQEHYuPMkMQ3PALegQIGRAE"
-            target="_blank"
-            className="bg-primary hover:bg-primary/90 inline-block rounded-full px-6 py-3 font-semibold text-white shadow transition"
+            className="bg-accent animate-pulse rounded-lg px-6 py-3 text-lg font-semibold text-white transition-all hover:opacity-90"
           >
             Voir tous les avis Google
-          </a>
+          </Link>
         </div>
       </Container>
     </section>

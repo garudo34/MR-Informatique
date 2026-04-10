@@ -7,7 +7,7 @@ import ImageCard from '../ui/ImageCard'
 
 export default function SocialNetworks() {
   return (
-    <section id="socialnetworks" className="bg-blue-50 py-14 md:py-20">
+    <section id="socialnetworks" className="bg-light py-14 md:py-20">
       <Container>
         <div className="grid items-center gap-12 md:grid-cols-2">
           {/* Réseaux sociaux */}
@@ -136,7 +136,7 @@ export default function SocialNetworks() {
             src="/reseaux.jpg"
             alt="Technicien MR Informatique"
             className="mx-auto w-full max-w-md overflow-hidden"
-            variant="blue"
+            variant="light"
           />
         </div>
       </Container>

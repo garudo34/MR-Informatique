@@ -13,10 +13,7 @@ const advantages = [
 
 export default function Advantages() {
   return (
-    <section
-      id="advantages"
-      className="bg-light scroll-mt-24 py-14 md:scroll-mt-28 md:py-20"
-    >
+    <section id="advantages" className="bg-light md: py-14 md:py-20">
       <Container className="mb-12 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
