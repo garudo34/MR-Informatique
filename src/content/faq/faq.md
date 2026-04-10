@@ -2,7 +2,19 @@
 title: FAQ
 ---
 
-## 🖥️ Question à définir
+## 💻 Quels services proposez-vous ?
+
+Nous proposons du dépannage informatique, maintenance et installation.
+
+## ⏱️ Quels sont les délais ?
+
+En général sous 24 à 48h selon la demande.
+
+## 💰 Quels sont les tarifs ?
+
+Les tarifs varient selon la prestation, contactez-nous pour un devis.
+
+## 🖥️ Vos interventions sont-elles uniquement à domicile ?
 
 Possibilité de déposer le PC à mon atelier, auparavant, veuillez me contacter pour obtenir l’adresse et un créneau horaire (généralement en fin de journée après mes interventions à domicile).
 
