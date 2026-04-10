@@ -102,12 +102,12 @@ export default function SocialNetworks() {
                   className="hover:text-accent flex items-center gap-3 transition"
                 >
                   <Image
-                    src="/icons/gmb_mini.png"
+                    src="/icons/logo_google_maps.png"
                     alt="Google My Business"
                     width={32}
                     height={32}
                   />
-                  Laissez un avis sur Google My Business
+                  Laissez un avis sur Google Maps
                 </a>
               </li>
 
