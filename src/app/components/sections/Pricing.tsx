@@ -31,9 +31,8 @@ export default function Pricing() {
           Nous vous proposons une liste non exhaustive de services variés,
           n&apos;hésitez pas à nous contacter pour obtenir un devis, notre
           diagnostic de panne à domicile est déductible de la réparation. Outre
-          l&apos;espèce, vous pourrez également nous régler via carte bancaire
-          (avec ou sans contact) ou Paypal. Nous n&apos;acceptons pas les
-          chèques.
+          l&apos;espèce et les chèques, vous pourrez également nous régler via
+          carte bancaire (avec ou sans contact) ou Paypal.
         </motion.p>
 
         {/* Bouton PDF */}
