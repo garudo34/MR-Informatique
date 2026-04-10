@@ -102,7 +102,7 @@ export default function SocialNetworks() {
                   className="hover:text-accent flex items-center gap-3 transition"
                 >
                   <Image
-                    src="/icons/logo_google_maps.png"
+                    src="/icons/maps_mini.png"
                     alt="Google My Business"
                     width={32}
                     height={32}
