@@ -54,7 +54,7 @@ export default function HeroCarousel() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-primary text-4xl leading-tight font-bold md:text-5xl"
           >
-            Dépannage et réparation informatique à domicile
+            A Propos
           </motion.h1>
 
           <motion.p
@@ -63,7 +63,20 @@ export default function HeroCarousel() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-lg text-gray-700"
           >
-            Intervention rapide • PC & Mac • Particuliers et professionnels
+            Réparation • Maintenance • Montage PC • Formation
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="text-lg text-gray-700"
+          >
+            MR Informatique est une auto-entreprise de maintenance informatique,
+            réparation, montage de PC sur mesure et formation. Vous rencontrez
+            un problème avec votre ordinateur? Inutile de transporter votre
+            matériel, nos services sont variés et nous nous déplaçons chez vous
+            pour vous venir en aide.
           </motion.p>
 
           <motion.div className="mt-4 flex flex-col items-center justify-center gap-6 text-gray-700 sm:flex-row md:justify-start">
@@ -90,7 +103,7 @@ export default function HeroCarousel() {
             })}
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -108,10 +121,10 @@ export default function HeroCarousel() {
             >
               Appeler maintenant
             </Link>
-          </motion.div>
+          </motion.div> */}
         </div>
 
-        {/* Image parallax */}
+        {/* Images carousel */}
         <motion.div
           style={{ y: yOffset }}
           initial={{ opacity: 0, x: 50 }}
