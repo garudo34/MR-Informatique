@@ -14,7 +14,7 @@ export default function Contact() {
           <ImageCard
             src="/IMG_3874.webp"
             alt="Technicien MR Informatique"
-            className="mx-auto hidden w-full max-w-sm overflow-hidden rounded-3xl p-4 shadow-lg md:block"
+            className="mx-auto w-full max-w-sm overflow-hidden rounded-3xl p-4 shadow-lg"
             variant="light"
           />
 
