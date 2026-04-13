@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Link from 'next/link'
 import { motion, useMotionValue, useTransform } from 'framer-motion'
 import { Cpu, Clock, User } from 'lucide-react'
 import ImageSlider from '../ui/ImageSlider'
@@ -102,26 +101,6 @@ export default function HeroCarousel() {
               )
             })}
           </motion.div>
-
-          {/* <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="mt-6 flex flex-col justify-center gap-4 sm:flex-row md:justify-start"
-          >
-            <Link
-              href="#contact"
-              className="bg-accent animate-pulse rounded-lg px-6 py-3 text-lg font-semibold text-white transition-all hover:opacity-90"
-            >
-              Demander un devis gratuit
-            </Link>
-            <Link
-              href="tel:0626148111"
-              className="border-accent text-accent hover:bg-accent rounded-lg border-2 px-6 py-3 text-lg font-semibold transition hover:text-white"
-            >
-              Appeler maintenant
-            </Link>
-          </motion.div> */}
         </div>
 
         {/* Images carousel */}
