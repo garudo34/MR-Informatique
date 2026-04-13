@@ -5,7 +5,16 @@ import Image from 'next/image'
 import Container from '../ui/Container'
 import ImageCard from '../ui/ImageCard'
 
-const cities = ['Bruay-la-Buissière', 'Béthune', 'Lens', 'Lillers', 'Auchel']
+const cities = [
+  'Bruay-la-Buissière',
+  'Béthune',
+  'Lens',
+  'Lillers',
+  'Auchel',
+  'Noeux-les-Mines',
+  'Divion',
+  'Houdain ',
+]
 
 export default function Coverage() {
   return (
