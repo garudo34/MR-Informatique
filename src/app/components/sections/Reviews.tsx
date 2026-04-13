@@ -6,6 +6,8 @@ import Container from '../ui/Container'
 import { GoogleReview } from '@/lib/types'
 import ReviewCard from '../ui/ReviewCard'
 import Link from 'next/link'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import ReviewSlider from '../ui/ReviewSlider'
 
 export default function Reviews() {
   const [reviews, setReviews] = useState<GoogleReview[]>([])
@@ -54,24 +56,8 @@ export default function Reviews() {
         </div>
         {/* GRID AVIS */}
 
-        <div className="grid gap-8 md:grid-cols-3">
-          <AnimatePresence>
-            {reviews.map((review, idx) => (
-              <motion.div
-                key={review.name} // id unique pour chaque review
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 20 }}
-                whileHover={{ scale: 1.03 }}
-                transition={{
-                  duration: 0.5,
-                  delay: idx * 0.15, // effet décalé pour chaque review
-                }}
-              >
-                <ReviewCard key={idx} review={review} />
-              </motion.div>
-            ))}
-          </AnimatePresence>
+        <div className="flex">
+          <ReviewSlider reviews={reviews} />
         </div>
         {/* CTA */}
         <div className="mt-16 text-center">

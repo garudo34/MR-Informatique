@@ -18,7 +18,7 @@ export default function ReviewCard({ review }: Props) {
   const toggleExpand = () => setExpanded((prev) => !prev)
 
   return (
-    <div className="flex max-w-md gap-4 rounded-2xl bg-white p-4 shadow-lg transition-shadow duration-200 hover:shadow-xl">
+    <div className="mb-2 flex h-full gap-4 rounded-2xl bg-white p-6 shadow-lg transition-shadow duration-200 hover:shadow-xl">
       {/* Photo de profil */}
       <div className="shrink-0">
         <img
