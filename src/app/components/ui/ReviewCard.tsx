@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { GoogleReview } from '@/lib/types'
+import Image from 'next/image'
 
 type Props = {
   review: GoogleReview
@@ -21,12 +22,15 @@ export default function ReviewCard({ review }: Props) {
     <div className="mb-2 flex h-full gap-4 rounded-2xl bg-white p-6 shadow-lg transition-shadow duration-200 hover:shadow-xl">
       {/* Photo de profil */}
       <div className="shrink-0">
-        <img
+        <Image
           src={authorAttribution.photoUri || '/default-avatar.png'}
           alt={authorAttribution.displayName}
           width={48}
           height={48}
           className="rounded-full object-cover"
+          onError={(e) => {
+            e.currentTarget.src = '/default-avatar.png'
+          }}
         />
       </div>
 
