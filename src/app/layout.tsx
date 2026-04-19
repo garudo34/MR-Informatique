@@ -4,12 +4,14 @@ import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
 })
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mr-informatique.fr'),
@@ -109,6 +111,8 @@ export default function RootLayout({
                     'https://www.facebook.com/mr.informatique.entreprise/',
                     'https://www.instagram.com/mr.informatique?igshid=vrzyxgjb5ku2',
                     'https://www.twitch.tv/mr_informatique',
+                    'https://www.linkedin.com/company/mr-informatique/',
+                    'https://www.pagesjaunes.fr/pros/60729491',
                   ],
                 }),
               }}
@@ -117,6 +121,20 @@ export default function RootLayout({
           </main>
           <Footer />
         </div>
+
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_ID}');
+          `}
+        </Script>
       </body>
     </html>
   )
