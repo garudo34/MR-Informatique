@@ -98,6 +98,8 @@ export default function RootLayout({
                         'Wednesday',
                         'Thursday',
                         'Friday',
+                        'Saturday',
+                        'Sunday',
                       ],
                       opens: '08:00',
                       closes: '23:00',

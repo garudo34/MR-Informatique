@@ -53,7 +53,7 @@ export default function HeroCarousel() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-primary text-4xl leading-tight font-bold md:text-5xl"
           >
-            A Propos
+            A propos
           </motion.h1>
 
           <motion.p
