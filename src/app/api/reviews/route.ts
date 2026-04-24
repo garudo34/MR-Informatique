@@ -5,14 +5,14 @@ const API_KEY = process.env.GOOGLE_API_KEY!
 
 export async function GET() {
   try {
-    const url = `https://places.googleapis.com/v1/places/${PLACE_ID}?fields=displayName,rating,reviews&key=${API_KEY}`
+    const url = `https://places.googleapis.com/v1/places/${PLACE_ID}?fields=displayName,rating,reviews,userRatingCount&key=${API_KEY}`
 
     const res = await fetch(url, {
       headers: {
         'Content-Type': 'application/json',
       },
       cache: 'force-cache',
-      next: { revalidate: 86400 }, // 1day
+      next: { revalidate: 604800 }, // 1week in seconds
     })
 
     if (!res.ok) {
@@ -24,6 +24,7 @@ export async function GET() {
     return NextResponse.json({
       name: data.displayName?.text,
       rating: data.rating,
+      userRatingCount: data.userRatingCount,
       reviews: data.reviews || [],
     })
   } catch (error) {

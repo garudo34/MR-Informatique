@@ -12,6 +12,7 @@ import ReviewSlider from '../ui/ReviewSlider'
 export default function Reviews() {
   const [reviews, setReviews] = useState<GoogleReview[]>([])
   const [rating, setRating] = useState<number | null>(null)
+  const [userRatingCount, setUserRatingCount] = useState<number | null>(null)
 
   useEffect(() => {
     fetch('api/reviews')
@@ -24,6 +25,7 @@ export default function Reviews() {
             []
         )
         setRating(data.rating || null)
+        setUserRatingCount(data.userRatingCount || null)
       })
   }, [])
 
@@ -49,7 +51,7 @@ export default function Reviews() {
             >
               <span className="text-xl text-yellow-500">★★★★★</span>
               <span className="font-semibold text-gray-700">
-                {rating} / 5 sur Google
+                {rating} / 5 sur Google ({userRatingCount} avis)
               </span>
             </motion.div>
           )}
